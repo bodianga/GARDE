@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="the_gardener"
+		module="the_gardener$sources"
+		revision="1.0.0-SNAPSHOT"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, docs"
+		date="20180725091710"/>
+	<dependencies>
+		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit">
+			<revision name="4.9.1.201712030800-r" status="release" pubdate="20180621135518" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="93">
+				<license name="Eclipse Distribution License (New BSD License)"/>
+				<metadata-artifact status="no" details="" size="8895" time="0" location="/home/bodianga/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-4.9.1.201712030800-r.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/org/eclipse/jgit/org.eclipse.jgit/4.9.1.201712030800-r/org.eclipse.jgit-4.9.1.201712030800-r.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="4.9.1.201712030800-r" rev-constraint-default="4.9.1.201712030800-r" rev-constraint-dynamic="4.9.1.201712030800-r" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="org.eclipse.jgit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2413214" time="0" location="/home/bodianga/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/srcs/org.eclipse.jgit-4.9.1.201712030800-r-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.9.1.201712030800-r/org.eclipse.jgit-4.9.1.201712030800-r-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.swagger" name="swagger-play2_2.12">
+			<revision name="1.6.0" status="release" pubdate="20180601111605" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://swagger.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="84">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4931" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-play2_2.12/ivy-1.6.0.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/io/swagger/swagger-play2_2.12/1.6.0/swagger-play2_2.12-1.6.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="swagger-play2_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17719" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-play2_2.12/srcs/swagger-play2_2.12-1.6.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/swagger/swagger-play2_2.12/1.6.0/swagger-play2_2.12-1.6.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.javaewah" name="JavaEWAH">
+			<revision name="1.1.6" status="release" pubdate="20180621135521" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/javaewah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4315" time="0" location="/home/bodianga/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="JavaEWAH" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="108494" time="0" location="/home/bodianga/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/srcs/JavaEWAH-1.1.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jcraft" name="jsch">
+			<revision name="0.1.54" status="release" pubdate="20160903114216" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
+				<license name="Revised BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3103" time="0" location="/home/bodianga/.ivy2/cache/com.jcraft/jsch/ivy-0.1.54.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="0.1.54" rev-constraint-default="0.1.54" rev-constraint-dynamic="0.1.54" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jsch" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="274824" time="0" location="/home/bodianga/.ivy2/cache/com.jcraft/jsch/srcs/jsch-0.1.54-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-jdbc-evolutions_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022015" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="57">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3570" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.15/play-jdbc-evolutions_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-jdbc-evolutions_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18114" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.12/srcs/play-jdbc-evolutions_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.15/play-jdbc-evolutions_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="routes-compiler_2.12">
+			<revision name="2.6.0" status="release" pubdate="20180601111634" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3748" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/routes-compiler_2.12/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/routes-compiler_2.12/2.6.0/routes-compiler_2.12-2.6.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="routes-compiler_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14625" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/routes-compiler_2.12/srcs/routes-compiler_2.12-2.6.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.12/2.6.0/routes-compiler_2.12-2.6.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.5" status="release" pubdate="20160422165236" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11588" time="0" location="/home/bodianga/.ivy2/cache/commons-io/commons-io/ivy-2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="275699" time="0" location="/home/bodianga/.ivy2/cache/commons-io/commons-io/srcs/commons-io-2.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-akka-http-server_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022003" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="39">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3991" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-akka-http-server_2.12/2.6.15/play-akka-http-server_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-akka-http-server_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17396" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/srcs/play-akka-http-server_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.12/2.6.15/play-akka-http-server_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-http-core_2.12">
+			<revision name="10.0.13" status="release" pubdate="20180618022004" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.0.13/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3730" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/ivy-10.0.13.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/akka/akka-http-core_2.12/10.0.13/akka-http-core_2.12-10.0.13.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="10.0.13" rev-constraint-default="10.0.13" rev-constraint-dynamic="10.0.13" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.0.13/"/>
+				<artifacts>
+					<artifact name="akka-http-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="411617" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/srcs/akka-http-core_2.12-10.0.13-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.0.13/akka-http-core_2.12-10.0.13-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-parsing_2.12">
+			<revision name="10.0.13" status="release" pubdate="20180618022004" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.0.13/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3108" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/ivy-10.0.13.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/akka/akka-parsing_2.12/10.0.13/akka-parsing_2.12-10.0.13.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="10.0.13" rev-constraint-default="10.0.13" rev-constraint-dynamic="10.0.13" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.0.13/"/>
+				<artifacts>
+					<artifact name="akka-parsing_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63785" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/srcs/akka-parsing_2.12-10.0.13-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.0.13/akka-parsing_2.12-10.0.13-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-server_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618021951" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="85">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3759" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-server_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-server_2.12/2.6.15/play-server_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-server_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="40089" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-server_2.12/srcs/play-server_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.12/2.6.15/play-server_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-guice_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022012" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="38">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3819" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-guice_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-guice_2.12/2.6.15/play-guice_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-guice_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17577" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-guice_2.12/srcs/play-guice_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-guice_2.12/2.6.15/play-guice_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.inject.extensions" name="guice-assistedinject">
+			<revision name="4.1.0" status="release" pubdate="20160617215329" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="87">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5305" time="0" location="/home/bodianga/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.1.0/guice-assistedinject-4.1.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="guice-assistedinject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34008" time="0" location="/home/bodianga/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/srcs/guice-assistedinject-4.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.1.0/guice-assistedinject-4.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.inject" name="guice">
+			<revision name="4.1.0" status="release" pubdate="20160617215314" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5652" time="0" location="/home/bodianga/.ivy2/cache/com.google.inject/guice/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="guice" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="310663" time="0" location="/home/bodianga/.ivy2/cache/com.google.inject/guice/srcs/guice-4.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="aopalliance" name="aopalliance">
+			<revision name="1.0" status="release" pubdate="20070226234340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
+				<license name="Public Domain"/>
+				<metadata-artifact status="no" details="" size="2417" time="0" location="/home/bodianga/.ivy2/cache/aopalliance/aopalliance/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="aopalliance" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21188" time="0" location="/home/bodianga/.ivy2/cache/aopalliance/aopalliance/srcs/aopalliance-1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="anorm_2.12">
+			<revision name="2.5.3" status="release" pubdate="20180601111558" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/anorm" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4006" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/anorm_2.12/ivy-2.5.3.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/anorm_2.12/2.5.3/anorm_2.12-2.5.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.5.3" rev-constraint-default="2.5.3" rev-constraint-dynamic="2.5.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="anorm_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43861" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/anorm_2.12/srcs/anorm_2.12-2.5.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/anorm_2.12/2.5.3/anorm_2.12-2.5.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.h2database" name="h2">
+			<revision name="1.4.193" status="release" pubdate="20180601111112" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="78">
+				<license name="MPL 2.0 or EPL 1.0" url="http://h2database.com/html/license.html"/>
+				<metadata-artifact status="no" details="" size="2454" time="0" location="/home/bodianga/.ivy2/cache/com.h2database/h2/ivy-1.4.193.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/h2database/h2/1.4.193/h2-1.4.193.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.4.193" rev-constraint-default="1.4.193" rev-constraint-dynamic="1.4.193" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="h2" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1254110" time="0" location="/home/bodianga/.ivy2/cache/com.h2database/h2/srcs/h2-1.4.193-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/h2database/h2/1.4.193/h2-1.4.193-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jsuereth" name="scala-arm_2.12">
+			<revision name="2.0" status="release" pubdate="20180601111600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jsuereth.com/scala-arm" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
+				<license name="BSD-Style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3139" time="0" location="/home/bodianga/.ivy2/cache/com.jsuereth/scala-arm_2.12/ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/jsuereth/scala-arm_2.12/2.0/scala-arm_2.12-2.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-arm_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14192" time="0" location="/home/bodianga/.ivy2/cache/com.jsuereth/scala-arm_2.12/srcs/scala-arm_2.12-2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.12/2.0/scala-arm_2.12-2.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-jdbc_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022013" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="28">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4440" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-jdbc_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-jdbc_2.12/2.6.15/play-jdbc_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-jdbc_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13977" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-jdbc_2.12/srcs/play-jdbc_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.12/2.6.15/play-jdbc_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.zaxxer" name="HikariCP">
+			<revision name="2.7.9" status="release" pubdate="20180618022014" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8024" time="0" location="/home/bodianga/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.7.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.7.9" rev-constraint-default="2.7.9" rev-constraint-dynamic="2.7.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="HikariCP" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="78339" time="0" location="/home/bodianga/.ivy2/cache/com.zaxxer/HikariCP/srcs/HikariCP-2.7.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jolbox" name="bonecp">
+			<revision name="0.8.0.RELEASE" status="release" pubdate="20180601111104" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+				<license name="Apache v2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="8118" time="0" location="/home/bodianga/.ivy2/cache/com.jolbox/bonecp/ivy-0.8.0.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="0.8.0.RELEASE" rev-constraint-default="0.8.0.RELEASE" rev-constraint-dynamic="0.8.0.RELEASE" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="bonecp" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="101324" time="0" location="/home/bodianga/.ivy2/cache/com.jolbox/bonecp/srcs/bonecp-0.8.0.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-jdbc-api_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022014" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="89">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3028" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-jdbc-api_2.12/2.6.15/play-jdbc-api_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-jdbc-api_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5492" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/srcs/play-jdbc-api_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.12/2.6.15/play-jdbc-api_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.swagger" name="swagger-scala-module_2.12">
+			<revision name="1.0.3" status="release" pubdate="20180601111633" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/swagger-api/swagger-scala-module" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3252" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-scala-module_2.12/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/io/swagger/swagger-scala-module_2.12/1.0.3/swagger-scala-module_2.12-1.0.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="swagger-scala-module_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2340" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-scala-module_2.12/srcs/swagger-scala-module_2.12-1.0.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/swagger/swagger-scala-module_2.12/1.0.3/swagger-scala-module_2.12-1.0.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.swagger" name="swagger-core">
+			<revision name="1.5.12" status="release" pubdate="20180601111616" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="11616" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-core/ivy-1.5.12.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/io/swagger/swagger-core/1.5.12/swagger-core-1.5.12.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.5.12" rev-constraint-default="1.5.12" rev-constraint-dynamic="1.5.12" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="swagger-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46957" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-core/srcs/swagger-core-1.5.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/swagger/swagger-core/1.5.12/swagger-core-1.5.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.validation" name="validation-api">
+			<revision name="1.1.0.Final" status="release" pubdate="20180601045620" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://beanvalidation.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3200" time="0" location="/home/bodianga/.ivy2/cache/javax.validation/validation-api/ivy-1.1.0.Final.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="94671" time="0" location="/home/bodianga/.ivy2/cache/javax.validation/validation-api/srcs/validation-api-1.1.0.Final-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.dataformat" name="jackson-dataformat-yaml">
+			<revision name="2.8.4" status="release" pubdate="20180601111621" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="81">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8856" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/ivy-2.8.4.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.8.4/jackson-dataformat-yaml-2.8.4.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-dataformat-yaml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="30562" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/srcs/jackson-dataformat-yaml-2.8.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.8.4/jackson-dataformat-yaml-2.8.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.15" status="release" pubdate="20180601111623" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="Apache License Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3591" time="0" location="/home/bodianga/.ivy2/cache/org.yaml/snakeyaml/ivy-1.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.15" rev-constraint-default="1.15" rev-constraint-dynamic="1.15" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="169119" time="0" location="/home/bodianga/.ivy2/cache/org.yaml/snakeyaml/srcs/snakeyaml-1.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.usc" name="jdbcdslog">
+			<revision name="1.0.6.2" status="release" pubdate="20180601111109" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/jdbcdslog-exp/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache License,Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4051" time="0" location="/home/bodianga/.ivy2/cache/com.googlecode.usc/jdbcdslog/ivy-1.0.6.2.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.0.6.2" rev-constraint-default="1.0.6.2" rev-constraint-dynamic="1.0.6.2" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jdbcdslog" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19176" time="0" location="/home/bodianga/.ivy2/cache/com.googlecode.usc/jdbcdslog/srcs/jdbcdslog-1.0.6.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.logstash.logback" name="logstash-logback-encoder">
+			<revision name="4.11" status="release" pubdate="20170624213307" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/logstash/logstash-logback-encoder" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="MIT License" url="http://www.slf4j.org/license.html"/>
+				<metadata-artifact status="no" details="" size="7068" time="0" location="/home/bodianga/.ivy2/cache/net.logstash.logback/logstash-logback-encoder/ivy-4.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/logstash/logback/logstash-logback-encoder/4.11/logstash-logback-encoder-4.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="4.11" rev-constraint-default="4.11" rev-constraint-dynamic="4.11" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logstash-logback-encoder" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="159732" time="0" location="/home/bodianga/.ivy2/cache/net.logstash.logback/logstash-logback-encoder/srcs/logstash-logback-encoder-4.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/logstash/logback/logstash-logback-encoder/4.11/logstash-logback-encoder-4.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.swagger" name="swagger-models">
+			<revision name="1.5.12" status="release" pubdate="20180601111624" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="10762" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-models/ivy-1.5.12.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/io/swagger/swagger-models/1.5.12/swagger-models-1.5.12.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.5.12" rev-constraint-default="1.5.12" rev-constraint-dynamic="1.5.12" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="swagger-models" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63815" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-models/srcs/swagger-models-1.5.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/swagger/swagger-models/1.5.12/swagger-models-1.5.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-access">
+			<revision name="1.2.3" status="release" pubdate="20170331212811" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="8316" time="0" location="/home/bodianga/.ivy2/cache/ch.qos.logback/logback-access/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-access/1.2.3/logback-access-1.2.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-access" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="95647" time="0" location="/home/bodianga/.ivy2/cache/ch.qos.logback/logback-access/srcs/logback-access-1.2.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-access/1.2.3/logback-access-1.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="anorm-tokenizer_2.12">
+			<revision name="2.5.3" status="release" pubdate="20180601111559" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/anorm" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2828" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/anorm-tokenizer_2.12/ivy-2.5.3.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/anorm-tokenizer_2.12/2.5.3/anorm-tokenizer_2.12-2.5.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.5.3" rev-constraint-default="2.5.3" rev-constraint-dynamic="2.5.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="anorm-tokenizer_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3046" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/anorm-tokenizer_2.12/srcs/anorm-tokenizer_2.12-2.5.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/anorm-tokenizer_2.12/2.5.3/anorm-tokenizer_2.12-2.5.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.swagger" name="swagger-annotations">
+			<revision name="1.5.12" status="release" pubdate="20180601111626" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="9090" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-annotations/ivy-1.5.12.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/io/swagger/swagger-annotations/1.5.12/swagger-annotations-1.5.12.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.5.12" rev-constraint-default="1.5.12" rev-constraint-dynamic="1.5.12" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="swagger-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="28517" time="0" location="/home/bodianga/.ivy2/cache/io.swagger/swagger-annotations/srcs/swagger-annotations-1.5.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/swagger/swagger-annotations/1.5.12/swagger-annotations-1.5.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.12">
+			<revision name="2.8.6" status="release" pubdate="20180601111607" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonModuleScala" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4217" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.12/ivy-2.8.6.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.8.6/jackson-module-scala_2.12-2.8.6.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8.6" rev-constraint-default="2.8.6" rev-constraint-dynamic="2.8.6" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-module-scala_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53619" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.12/srcs/jackson-module-scala_2.12-2.8.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.8.6/jackson-module-scala_2.12-2.8.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.module" name="jackson-module-paranamer">
+			<revision name="2.8.6" status="release" pubdate="20180601111608" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-modules-base" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="91">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21117" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/ivy-2.8.6.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/fasterxml/jackson/module/jackson-module-paranamer/2.8.6/jackson-module-paranamer-2.8.6.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8.6" rev-constraint-default="2.8.6" rev-constraint-dynamic="2.8.6" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-module-paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7272" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/srcs/jackson-module-paranamer-2.8.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.8.6/jackson-module-paranamer-2.8.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-logback_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022002" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="11">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3303" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-logback_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-logback_2.12/2.6.15/play-logback_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-logback_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6019" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-logback_2.12/srcs/play-logback_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.12/2.6.15/play-logback_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.30" status="release" pubdate="20180601111111" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2538" time="0" location="/home/bodianga/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.30.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="5.1.30" rev-constraint-default="5.1.30" rev-constraint-dynamic="5.1.30" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="862049" time="0" location="/home/bodianga/.ivy2/cache/mysql/mysql-connector-java/srcs/mysql-connector-java-5.1.30-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="filters-helpers_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022001" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="8">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3550" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/filters-helpers_2.12/2.6.15/filters-helpers_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="filters-helpers_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46212" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/srcs/filters-helpers_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.12/2.6.15/filters-helpers_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.8" status="release" pubdate="20180601111613" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4254" time="0" location="/home/bodianga/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.8.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27125" time="0" location="/home/bodianga/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.cucumber" name="gherkin">
+			<revision name="5.0.0" status="release" pubdate="20180523104441" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/cucumber/gherkin-java" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license"/>
+				<metadata-artifact status="no" details="" size="3749" time="0" location="/home/bodianga/.ivy2/cache/io.cucumber/gherkin/ivy-5.0.0.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/io/cucumber/gherkin/5.0.0/gherkin-5.0.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="5.0.0" rev-constraint-default="5.0.0" rev-constraint-dynamic="5.0.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="gherkin" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43915" time="0" location="/home/bodianga/.ivy2/cache/io.cucumber/gherkin/srcs/gherkin-5.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/cucumber/gherkin/5.0.0/gherkin-5.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.cucumber" name="gherkin-jvm-deps">
+			<revision name="1.0.4" status="release" pubdate="20180523104442" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/cucumber/gherkin-jvm-deps" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<license name="Public Domain" url="http://en.wikipedia.org/wiki/Public_domain"/>
+				<metadata-artifact status="no" details="" size="3099" time="0" location="/home/bodianga/.ivy2/cache/io.cucumber/gherkin-jvm-deps/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/io/cucumber/gherkin-jvm-deps/1.0.4/gherkin-jvm-deps-1.0.4.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="gherkin-jvm-deps" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="363" time="0" location="/home/bodianga/.ivy2/cache/io.cucumber/gherkin-jvm-deps/srcs/gherkin-jvm-deps-1.0.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/cucumber/gherkin-jvm-deps/1.0.4/gherkin-jvm-deps-1.0.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.julienrf" name="play-json-derived-codecs_2.12">
+			<revision name="4.0.0" status="release" pubdate="20180523104439" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/julienrf/play-json-derived-codecs" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="MIT License" url="http://opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3260" time="0" location="/home/bodianga/.ivy2/cache/org.julienrf/play-json-derived-codecs_2.12/ivy-4.0.0.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/org/julienrf/play-json-derived-codecs_2.12/4.0.0/play-json-derived-codecs_2.12-4.0.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="4.0.0" rev-constraint-default="4.0.0" rev-constraint-dynamic="4.0.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-json-derived-codecs_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5256" time="0" location="/home/bodianga/.ivy2/cache/org.julienrf/play-json-derived-codecs_2.12/srcs/play-json-derived-codecs_2.12-4.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/julienrf/play-json-derived-codecs_2.12/4.0.0/play-json-derived-codecs_2.12-4.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.12">
+			<revision name="2.3.2" status="release" pubdate="20180523104440" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="88">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3226" time="0" location="/home/bodianga/.ivy2/cache/com.chuusai/shapeless_2.12/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/chuusai/shapeless_2.12/2.3.2/shapeless_2.12-2.3.2.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="shapeless_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="163673" time="0" location="/home/bodianga/.ivy2/cache/com.chuusai/shapeless_2.12/srcs/shapeless_2.12-2.3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.12/2.3.2/shapeless_2.12-2.3.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.3.6" status="release" pubdate="20180621135522" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9721" time="0" location="/home/bodianga/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.6.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/org/apache/httpcomponents/httpclient/4.3.6/httpclient-4.3.6.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="4.3.6" rev-constraint-default="4.3.6" rev-constraint-dynamic="4.3.6" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="656337" time="0" location="/home/bodianga/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.3.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.6/httpclient-4.3.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.3.3" status="release" pubdate="20180621135524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7613" time="0" location="/home/bodianga/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.3.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="4.3.3" rev-constraint-default="4.3.3" rev-constraint-dynamic="4.3.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="377206" time="0" location="/home/bodianga/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.3.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.3" status="release" pubdate="20180621044003" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10350" time="0" location="/home/bodianga/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73915" time="0" location="/home/bodianga/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.1.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ahc-ws_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022005" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4153" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-ahc-ws_2.12/2.6.15/play-ahc-ws_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-ahc-ws_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="20627" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.12/srcs/play-ahc-ws_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.12/2.6.15/play-ahc-ws_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.cache" name="cache-api">
+			<revision name="1.0.0" status="release" pubdate="20140328043442" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jsr107/jsr107spec" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<license name="JSR-000107 JCACHE 2.9 Public Review - Updated Specification                 License             " url="https://raw.github.com/jsr107/jsr107spec/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4067" time="0" location="/home/bodianga/.ivy2/cache/javax.cache/cache-api/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/cache/cache-api/1.0.0/cache-api-1.0.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="cache-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="84172" time="0" location="/home/bodianga/.ivy2/cache/javax.cache/cache-api/srcs/cache-api-1.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/cache/cache-api/1.0.0/cache-api-1.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ahc-ws-standalone_2.12">
+			<revision name="1.1.9" status="release" pubdate="20180618022009" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4760" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.12/ivy-1.1.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-ahc-ws-standalone_2.12/1.1.9/play-ahc-ws-standalone_2.12-1.1.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.9" rev-constraint-default="1.1.9" rev-constraint-dynamic="1.1.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ahc-ws-standalone_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54063" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.12/srcs/play-ahc-ws-standalone_2.12-1.1.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.12/1.1.9/play-ahc-ws-standalone_2.12-1.1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="shaded-oauth">
+			<revision name="1.1.9" status="release" pubdate="20180618022011" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2496" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/shaded-oauth/ivy-1.1.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/shaded-oauth/1.1.9/shaded-oauth-1.1.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.9" rev-constraint-default="1.1.9" rev-constraint-dynamic="1.1.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="shaded-oauth" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="256" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/shaded-oauth/srcs/shaded-oauth-1.1.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/1.1.9/shaded-oauth-1.1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="shaded-asynchttpclient">
+			<revision name="1.1.9" status="release" pubdate="20180618022011" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="90">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2526" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/ivy-1.1.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/shaded-asynchttpclient/1.1.9/shaded-asynchttpclient-1.1.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.9" rev-constraint-default="1.1.9" rev-constraint-dynamic="1.1.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="shaded-asynchttpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="263" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/srcs/shaded-asynchttpclient-1.1.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/1.1.9/shaded-asynchttpclient-1.1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="cachecontrol_2.12">
+			<revision name="1.1.3" status="release" pubdate="20180618022009" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/cachecontrol" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3524" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/cachecontrol_2.12/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/cachecontrol_2.12/1.1.3/cachecontrol_2.12-1.1.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="cachecontrol_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27451" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/cachecontrol_2.12/srcs/cachecontrol_2.12-1.1.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.12/1.1.3/cachecontrol_2.12-1.1.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.9.2" status="release" pubdate="20180618022010" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6284" time="0" location="/home/bodianga/.ivy2/cache/org.joda/joda-convert/ivy-1.9.2.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/org/joda/joda-convert/1.9.2/joda-convert-1.9.2.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.9.2" rev-constraint-default="1.9.2" rev-constraint-dynamic="1.9.2" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54616" time="0" location="/home/bodianga/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.9.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.9.2/joda-convert-1.9.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
+			<revision name="1.1.0" status="release" pubdate="20180618021957" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2929" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46978" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/srcs/scala-parser-combinators_2.12-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ws_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618022006" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4367" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ws_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-ws_2.12/2.6.15/play-ws_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-ws_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11342" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ws_2.12/srcs/play-ws_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws_2.12/2.6.15/play-ws_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ws-standalone-json_2.12">
+			<revision name="1.1.9" status="release" pubdate="20180618022008" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3998" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.12/ivy-1.1.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-ws-standalone-json_2.12/1.1.9/play-ws-standalone-json_2.12-1.1.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.9" rev-constraint-default="1.1.9" rev-constraint-dynamic="1.1.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ws-standalone-json_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3784" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.12/srcs/play-ws-standalone-json_2.12-1.1.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.12/1.1.9/play-ws-standalone-json_2.12-1.1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ws-standalone-xml_2.12">
+			<revision name="1.1.9" status="release" pubdate="20180618022007" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4000" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.12/ivy-1.1.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-ws-standalone-xml_2.12/1.1.9/play-ws-standalone-xml_2.12-1.1.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.9" rev-constraint-default="1.1.9" rev-constraint-dynamic="1.1.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ws-standalone-xml_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4840" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.12/srcs/play-ws-standalone-xml_2.12-1.1.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.12/1.1.9/play-ws-standalone-xml_2.12-1.1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ws-standalone_2.12">
+			<revision name="1.1.9" status="release" pubdate="20180618022006" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4116" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.12/ivy-1.1.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-ws-standalone_2.12/1.1.9/play-ws-standalone_2.12-1.1.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.9" rev-constraint-default="1.1.9" rev-constraint-dynamic="1.1.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ws-standalone_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="26178" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.12/srcs/play-ws-standalone_2.12-1.1.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.12/1.1.9/play-ws-standalone_2.12-1.1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618021952" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="96">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="7952" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play_2.12/2.6.15/play_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="457014" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play_2.12/srcs/play_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.12/2.6.15/play_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.4" status="release" pubdate="20171011092224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2637" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="582957" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091014013500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="95">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2506" time="0" location="/home/bodianga/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10928" time="0" location="/home/bodianga/.ivy2/cache/javax.inject/javax.inject/srcs/javax.inject-1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.transaction" name="jta">
+			<revision name="1.1" status="release" pubdate="20081028022721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/jta" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
+				<metadata-artifact status="no" details="" size="2479" time="0" location="/home/bodianga/.ivy2/cache/javax.transaction/jta/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25014" time="0" location="/home/bodianga/.ivy2/cache/javax.transaction/jta/srcs/jta-1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.6" status="release" pubdate="20170609114105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13392" time="0" location="/home/bodianga/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="3.6" rev-constraint-default="3.6" rev-constraint-dynamic="3.6" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="543262" time="0" location="/home/bodianga/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.jsonwebtoken" name="jjwt">
+			<revision name="0.7.0" status="release" pubdate="20160913023832" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="5618" time="0" location="/home/bodianga/.ivy2/cache/io.jsonwebtoken/jjwt/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jjwt" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="110342" time="0" location="/home/bodianga/.ivy2/cache/io.jsonwebtoken/jjwt/srcs/jjwt-0.7.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="22.0" status="release" pubdate="20170522204957" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7244" time="0" location="/home/bodianga/.ivy2/cache/com.google.guava/guava/ivy-22.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="22.0" rev-constraint-default="22.0" rev-constraint-dynamic="22.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1527071" time="0" location="/home/bodianga/.ivy2/cache/com.google.guava/guava/srcs/guava-22.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.mojo" name="animal-sniffer-annotations">
+			<revision name="1.14" status="release" pubdate="20150225175330" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4565" time="0" location="/home/bodianga/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/ivy-1.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.14" rev-constraint-default="1.14" rev-constraint-dynamic="1.14" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="animal-sniffer-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1862" time="0" location="/home/bodianga/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/srcs/animal-sniffer-annotations-1.14-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.j2objc" name="j2objc-annotations">
+			<revision name="1.1" status="release" pubdate="20170119000659" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/google/j2objc/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3174" time="0" location="/home/bodianga/.ivy2/cache/com.google.j2objc/j2objc-annotations/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="j2objc-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10481" time="0" location="/home/bodianga/.ivy2/cache/com.google.j2objc/j2objc-annotations/srcs/j2objc-annotations-1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.errorprone" name="error_prone_annotations">
+			<revision name="2.0.18" status="release" pubdate="20170301043423" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4020" time="0" location="/home/bodianga/.ivy2/cache/com.google.errorprone/error_prone_annotations/ivy-2.0.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.0.18" rev-constraint-default="2.0.18" rev-constraint-dynamic="2.0.18" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="error_prone_annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="22892" time="0" location="/home/bodianga/.ivy2/cache/com.google.errorprone/error_prone_annotations/srcs/error_prone_annotations-2.0.18-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-json_2.12">
+			<revision name="2.6.9" status="release" pubdate="20180618022000" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="55">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4852" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-json_2.12/ivy-2.6.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-json_2.12/2.6.9/play-json_2.12-2.6.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.9" rev-constraint-default="2.6.9" rev-constraint-dynamic="2.6.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-json_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="48475" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-json_2.12/srcs/play-json_2.12-2.6.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.6.9/play-json_2.12-2.6.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.9.9" status="release" pubdate="20170323143313" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6647" time="0" location="/home/bodianga/.ivy2/cache/joda-time/joda-time/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="778815" time="0" location="/home/bodianga/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="macro-compat_2.12">
+			<revision name="1.1.1" status="release" pubdate="20161102094258" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/macro-compat" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="/home/bodianga/.ivy2/cache/org.typelevel/macro-compat_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="macro-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1052" time="0" location="/home/bodianga/.ivy2/cache/org.typelevel/macro-compat_2.12/srcs/macro-compat_2.12-1.1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-functional_2.12">
+			<revision name="2.6.9" status="release" pubdate="20180618022000" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-functional_2.12/ivy-2.6.9.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-functional_2.12/2.6.9/play-functional_2.12-2.6.9.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.9" rev-constraint-default="2.6.9" rev-constraint-dynamic="2.6.9" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-functional_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9833" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-functional_2.12/srcs/play-functional_2.12-2.6.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.6.9/play-functional_2.12-2.6.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.10" status="release" pubdate="20141106151535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10608" time="0" location="/home/bodianga/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301032" time="0" location="/home/bodianga/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.8.11.1" status="release" pubdate="20180618021959" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8160" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.11.1.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/fasterxml/jackson/core/jackson-databind/2.8.11.1/jackson-databind-2.8.11.1.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8.11.1" rev-constraint-default="2.8.11.1" rev-constraint-dynamic="2.8.11.1" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="927893" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.8.11.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.11.1/jackson-databind-2.8.11.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310">
+			<revision name="2.8.11" status="release" pubdate="20171224033007" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21275" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.11/jackson-datatype-jsr310-2.8.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jsr310" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="62125" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/srcs/jackson-datatype-jsr310-2.8.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.11/jackson-datatype-jsr310-2.8.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8">
+			<revision name="2.8.11" status="release" pubdate="20171224032956" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="20981" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.11/jackson-datatype-jdk8-2.8.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jdk8" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="20301" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/srcs/jackson-datatype-jdk8-2.8.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.11/jackson-datatype-jdk8-2.8.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.8.11" status="release" pubdate="20171224031040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6970" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.11/jackson-annotations-2.8.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="57660" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.8.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.11/jackson-annotations-2.8.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.8.11" status="release" pubdate="20171224031303" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7424" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.11/jackson-core-2.8.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="294668" time="0" location="/home/bodianga/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.8.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.11/jackson-core-2.8.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.12">
+			<revision name="2.5.11" status="release" pubdate="20180618021958" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3347" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/ivy-2.5.11.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/akka/akka-slf4j_2.12/2.5.11/akka-slf4j_2.12-2.5.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.5.11" rev-constraint-default="2.5.11" rev-constraint-dynamic="2.5.11" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2519" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/srcs/akka-slf4j_2.12-2.5.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.11/akka-slf4j_2.12-2.5.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="twirl-api_2.12">
+			<revision name="1.3.14" status="release" pubdate="20180618021842" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="29">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2942" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/twirl-api_2.12/ivy-1.3.14.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/twirl-api_2.12/1.3.14/twirl-api_2.12-1.3.14.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.3.14" rev-constraint-default="1.3.14" rev-constraint-dynamic="1.3.14" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="twirl-api_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9387" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/twirl-api_2.12/srcs/twirl-api_2.12-1.3.14-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.14/twirl-api_2.12-1.3.14-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="1.0.6" status="release" pubdate="20161101152105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2987" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-xml_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109199" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-streams_2.12">
+			<revision name="2.6.15" status="release" pubdate="20180618021954" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="92">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4309" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-streams_2.12/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-streams_2.12/2.6.15/play-streams_2.12-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-streams_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15353" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-streams_2.12/srcs/play-streams_2.12-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.12/2.6.15/play-streams_2.12-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.2.3" status="release" pubdate="20170331212753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10412" time="0" location="/home/bodianga/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="230201" time="0" location="/home/bodianga/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.2.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.2.3" status="release" pubdate="20170331212715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="7917" time="0" location="/home/bodianga/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="399141" time="0" location="/home/bodianga/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.2.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-stream_2.12">
+			<revision name="2.5.11" status="release" pubdate="20180618021955" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3539" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/ivy-2.5.11.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/akka/akka-stream_2.12/2.5.11/akka-stream_2.12-2.5.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.5.11" rev-constraint-default="2.5.11" rev-constraint-dynamic="2.5.11" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11"/>
+				<artifacts>
+					<artifact name="akka-stream_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="523481" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/srcs/akka-stream_2.12-2.5.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.11/akka-stream_2.12-2.5.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="ssl-config-core_2.12">
+			<revision name="0.2.2" status="release" pubdate="20170308153931" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2857" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe/ssl-config-core_2.12/ivy-0.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.2/ssl-config-core_2.12-0.2.2.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="0.2.2" rev-constraint-default="0.2.2" rev-constraint-dynamic="0.2.2" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="ssl-config-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49384" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe/ssl-config-core_2.12/srcs/ssl-config-core_2.12-0.2.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.2/ssl-config-core_2.12-0.2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-protobuf_2.12">
+			<revision name="2.5.11" status="release" pubdate="20180618021957" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2810" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/ivy-2.5.11.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/akka/akka-protobuf_2.12/2.5.11/akka-protobuf_2.12-2.5.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.5.11" rev-constraint-default="2.5.11" rev-constraint-dynamic="2.5.11" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11"/>
+				<artifacts>
+					<artifact name="akka-protobuf_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="275262" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/srcs/akka-protobuf_2.12-2.5.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.12/2.5.11/akka-protobuf_2.12-2.5.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.12">
+			<revision name="2.5.11" status="release" pubdate="20180618021956" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3102" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/ivy-2.5.11.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/akka/akka-actor_2.12/2.5.11/akka-actor_2.12-2.5.11.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.5.11" rev-constraint-default="2.5.11" rev-constraint-dynamic="2.5.11" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11"/>
+				<artifacts>
+					<artifact name="akka-actor_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="525185" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.11/akka-actor_2.12-2.5.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-java8-compat_2.12">
+			<revision name="0.8.0" status="release" pubdate="20161030001227" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="97">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-java8-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63853" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/srcs/scala-java8-compat_2.12-0.8.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.2" status="release" pubdate="20171006160218" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2875" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe/config/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.2/config-1.3.2.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="172766" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe/config/srcs/config-1.3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.2/config-1.3.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.reactivestreams" name="reactive-streams">
+			<revision name="1.0.2" status="release" pubdate="20180618021954" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="2523" time="0" location="/home/bodianga/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="reactive-streams" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3997" time="0" location="/home/bodianga/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-netty-utils">
+			<revision name="2.6.15" status="release" pubdate="20180618021953" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3156" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-netty-utils/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-netty-utils/2.6.15/play-netty-utils-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-netty-utils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19278" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-netty-utils/srcs/play-netty-utils-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.6.15/play-netty-utils-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jcl-over-slf4j">
+			<revision name="1.7.25" status="release" pubdate="20170316173729" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5267" time="0" location="/home/bodianga/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23239" time="0" location="/home/bodianga/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.25-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jul-to-slf4j">
+			<revision name="1.7.25" status="release" pubdate="20170316173746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5254" time="0" location="/home/bodianga/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4872" time="0" location="/home/bodianga/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.25-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316173632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5377" time="0" location="/home/bodianga/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55539" time="0" location="/home/bodianga/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="build-link">
+			<revision name="2.6.15" status="release" pubdate="20180618021843" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2868" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/build-link/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/build-link/2.6.15/build-link-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="build-link" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4253" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/build-link/srcs/build-link-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.15/build-link-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-exceptions">
+			<revision name="2.6.15" status="release" pubdate="20180618021844" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2698" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.6.15.xml" searched="false" origin-is-local="false" origin-location="http://artifactory.corp.kelkoo.net/external/com/typesafe/play/play-exceptions/2.6.15/play-exceptions-2.6.15.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.6.15" rev-constraint-default="2.6.15" rev-constraint-dynamic="2.6.15" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="https://www.playframework.com/documentation/2.6.15/api/scala/index.html"/>
+				<artifacts>
+					<artifact name="play-exceptions" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2372" time="0" location="/home/bodianga/.ivy2/cache/com.typesafe.play/play-exceptions/srcs/play-exceptions-2.6.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.15/play-exceptions-2.6.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.4" status="release" pubdate="20171011090456" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="14">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2471" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.pom"/>
+				<caller organisation="the_gardener" name="the_gardener$sources" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.0.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="991177" time="0" location="/home/bodianga/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

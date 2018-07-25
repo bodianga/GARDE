@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/bodianga/IdeaProjects/git/theGardener/conf/routes,/home/bodianga/IdeaProjects/git/theGardener/target/scala-2.12/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/bodianga/IdeaProjects/git/theGardener/conf/evolutions,/home/bodianga/IdeaProjects/git/theGardener/target/scala-2.12/classes/evolutions)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/bodianga/IdeaProjects/git/theGardener/conf/evolutions/default,/home/bodianga/IdeaProjects/git/theGardener/target/scala-2.12/classes/evolutions/default)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/bodianga/IdeaProjects/git/theGardener/conf/evolutions/default/1.sql,/home/bodianga/IdeaProjects/git/theGardener/target/scala-2.12/classes/evolutions/default/1.sql)[0m

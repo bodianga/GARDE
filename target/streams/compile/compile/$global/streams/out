@@ -1,0 +1,24 @@
+[0m[[0m[31merror[0m] [0m[0m/home/bodianga/IdeaProjects/git/theGardener/app/repository/FeatureRepository.scala:29:35: not enough arguments for method map: (f: Unit => B)anorm.RowParser[B].[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter f.[0m
+[0m[[0m[31merror[0m] [0m[0m    FeatureDBDTO.apply(feature.map())[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bodianga/IdeaProjects/git/theGardener/app/repository/FeatureRepository.scala:53:10: not enough arguments for method map: (f: models.FeatureDB => B)(implicit bf: scala.collection.generic.CanBuildFrom[List[models.FeatureDB],B,That])That.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter f.[0m
+[0m[[0m[31merror[0m] [0m[0m    }.map()[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bodianga/IdeaProjects/git/theGardener/app/repository/FeatureRepository.scala:58:71: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : anorm.ResultSetParser[List[models.FeatureDB]][0m
+[0m[[0m[31merror[0m] [0m[0m required: anorm.ResultSetParser[Seq[models.Feature]][0m
+[0m[[0m[31merror[0m] [0m[0m      SQL"SELECT * FROM feature WHERE branchId = $branchId".as(parser.*)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bodianga/IdeaProjects/git/theGardener/app/repository/FeatureRepository.scala:67:69: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : anorm.ResultSetParser[models.FeatureDB][0m
+[0m[[0m[31merror[0m] [0m[0m required: anorm.ResultSetParser[models.Feature][0m
+[0m[[0m[31merror[0m] [0m[0m      SQL"SELECT * FROM feature WHERE id = ${feature.id}".as(parser.single)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bodianga/IdeaProjects/git/theGardener/app/repository/FeatureRepository.scala:73:92: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : anorm.ResultSetParser[List[models.FeatureDB]][0m
+[0m[[0m[31merror[0m] [0m[0m required: anorm.ResultSetParser[Seq[models.Feature]][0m
+[0m[[0m[31merror[0m] [0m[0m      SQL" SELECT * FROM feature WHERE id = $featureId AND branchId = $branchId".as(parser.*)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m

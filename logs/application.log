@@ -1,0 +1,2726 @@
+2018-07-18 13:34:10,395 - [INFO] - from application in play-dev-mode-akka.actor.default-dispatcher-2 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 13:34:10,555 - [INFO] - from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-2 ?.?:? Database [default] connected at jdbc:h2:mem:play
+
+2018-07-18 13:34:11,016 - [INFO] - from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-2 ?.?:? Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.hosts.AllowedHostsFilter
+
+
+2018-07-18 13:34:11,686 - [INFO] - from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-2 ?.?:? Application started (Dev)
+
+2018-07-18 13:34:12,317 - [WARN] - from akka.actor.ActorSystemImpl in play-dev-mode-akka.actor.default-dispatcher-3 ?.?:? Explicitly set HTTP header 'Content-Length: 12792' is ignored, explicit `Content-Length` header is not allowed. Use the appropriate HttpEntity subtype.
+
+2018-07-18 14:41:10,307 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 14:41:13,225 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-18 14:41:13,373 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 14:41:14,131 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-18 14:41:14,949 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 14:41:15,491 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-18 14:41:15,571 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 14:41:15,893 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-18 14:41:15,971 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 14:41:16,197 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-18 14:41:16,837 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 14:41:17,167 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 14:41:47,398 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-18 14:41:49,041 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:44:43,562 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:44:43,968 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN DEFAULT FALSE,
+PROJECTID VARCHAR(255) NOT NULL,
+FOREIGN KEY (PROJECTID) REFERENCES PROJECT(ID)
+CONSTRAINT[*] PK_BRANCH PRIMARY KEY (ID)
+) "; expected "INDEX, ON, NOT, DEFERRABLE, NOCHECK, CHECK, ,, )"; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN DEFAULT false,
+projectId varchar(255) not null,
+foreign key (projectId) references project(id)
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 10:46:11,723 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:46:12,050 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255) NOT NULL,
+FOREIGN KEY (PROJECTID) REFERENCES PROJECT(ID)
+CONSTRAINT[*] PK_BRANCH PRIMARY KEY (ID)
+) "; expected "INDEX, ON, NOT, DEFERRABLE, NOCHECK, CHECK, ,, )"; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255) not null,
+foreign key (projectId) references project(id)
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 10:46:47,653 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:46:47,977 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255) NOT NULL,
+CONSTRAINT FK_BRANCH FOREIGN KEY (PROJECTID) REFERENCES PROJECT(ID)
+CONSTRAINT[*] PK_BRANCH PRIMARY KEY (ID)
+) "; expected "INDEX, ON, NOT, DEFERRABLE, NOCHECK, CHECK, ,, )"; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255) not null,
+constraint fk_branch foreign key (projectId) references project(id)
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 10:47:21,765 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:47:22,083 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Unknown data type: "ENUM"; SQL statement:
+create table scenario(
+id varchar(255) not null,
+description varchar(255) not null,
+scenarioType varchar(255) not null,
+workflowStep ENUM ('draft', 'ready', 'ongoing', 'valid') default 'draft',
+caseType ENUM ('nominal', 'limit', 'error') not null,
+abstractionLevel ENUM ('level0', 'level1', 'level2'),
+stepsAsJson varchar(255) not null,
+featureId varchar(255) not null,
+foreign key (featureId) references feature(id),
+constraint pk_scenario primary key (id)
+) [50004-193] [ERROR:50004, SQLSTATE:HY004]
+
+2018-07-19 10:48:25,706 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:48:26,036 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Unknown data type: "ENUM"; SQL statement:
+create table scenario(
+id varchar(255) not null,
+description varchar(255) not null,
+scenarioType varchar(255) not null,
+workflowStep ENUM ('draft', 'ready', 'ongoing', 'valid') not null,
+caseType ENUM ('nominal', 'limit', 'error') not null,
+abstractionLevel ENUM ('level0', 'level1', 'level2'),
+stepsAsJson varchar(255) not null,
+featureId varchar(255) not null,
+foreign key (featureId) references feature(id),
+constraint pk_scenario primary key (id)
+) [50004-193] [ERROR:50004, SQLSTATE:HY004]
+
+2018-07-19 10:49:27,855 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:49:28,191 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Unknown data type: "ENUM"; SQL statement:
+create table scenario(
+id varchar(255) not null,
+description varchar(255) not null,
+scenarioType varchar(255) not null,
+workflowStep ENUM ('draft', 'ready', 'ongoing', 'valid'),
+caseType ENUM ('nominal', 'limit', 'error'),
+abstractionLevel ENUM ('level0', 'level1', 'level2'),
+stepsAsJson varchar(255) not null,
+featureId varchar(255) not null,
+foreign key (featureId) references feature(id),
+constraint pk_scenario primary key (id)
+) [50004-193] [ERROR:50004, SQLSTATE:HY004]
+
+2018-07-19 10:50:59,844 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:51:02,696 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 10:54:29,066 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:54:31,693 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 10:55:51,100 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:55:51,425 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Column "ID" not found; SQL statement:
+create table feature(
+id varchar(255) not null,
+path varchar(255) not null,
+name varchar(255) not null,
+description varchar(255) not null,
+backgroundAsJson varchar(255) not null,
+branchId varchar(255) not null,
+foreign key (branchId) references branch (id),
+constraint pk_feature primary key(id)
+) [42122-193] [ERROR:42122, SQLSTATE:42S22]
+
+2018-07-19 10:58:24,249 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:58:24,536 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Column "ID" not found; SQL statement:
+create table feature(
+featureId varchar(255) not null,
+path varchar(255) not null,
+name varchar(255) not null,
+description varchar(255) not null,
+backgroundAsJson varchar(255) not null,
+branchId varchar(255) not null,
+foreign key (branchId) references branch (id),
+constraint pk_feature primary key(featureId)
+) [42122-193] [ERROR:42122, SQLSTATE:42S22]
+
+2018-07-19 10:59:10,235 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:59:10,566 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Unknown data type: "ENUM"; SQL statement:
+create table scenario(
+scenarioId varchar(255) not null,
+description varchar(255) not null,
+scenarioType varchar(255) not null,
+workflowStep ENUM ('draft', 'ready', 'ongoing', 'valid'),
+caseType ENUM ('nominal', 'limit', 'error'),
+abstractionLevel ENUM ('level0', 'level1', 'level2'),
+stepsAsJson varchar(255) not null,
+featureId varchar(255) not null,
+foreign key (featureId) references feature(featureId),
+constraint pk_scenario primary key (scenarioId)
+) [50004-193] [ERROR:50004, SQLSTATE:HY004]
+
+2018-07-19 10:59:53,650 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 10:59:53,984 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Unknown data type: "ENUMERATION"; SQL statement:
+create table scenario(
+scenarioId varchar(255) not null,
+description varchar(255) not null,
+scenarioType varchar(255) not null,
+workflowStep ENUMERATION ('draft', 'ready', 'ongoing', 'valid'),
+caseType ENUMERATION ('nominal', 'limit', 'error'),
+abstractionLevel ENUMERATION ('level0', 'level1', 'level2'),
+stepsAsJson varchar(255) not null,
+featureId varchar(255) not null,
+foreign key (featureId) references feature(featureId),
+constraint pk_scenario primary key (scenarioId)
+) [50004-193] [ERROR:50004, SQLSTATE:HY004]
+
+2018-07-19 14:15:54,845 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:15:55,126 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in pool-1-thread-1 ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 14:15:56,726 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:15:56,833 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in pool-1-thread-1 ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 14:15:56,960 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:15:56,975 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in pool-1-thread-1 ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 14:15:58,056 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:15:58,123 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in pool-1-thread-1 ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 14:15:58,237 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:15:58,258 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in pool-1-thread-1 ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 14:15:58,471 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:15:58,484 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in pool-1-thread-1 ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 14:15:59,362 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:15:59,413 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in pool-1-thread-1 ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 14:16:23,225 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:16:23,557 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 14:17:07,291 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:17:09,930 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 14:48:57,884 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:49:00,587 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 14:50:45,589 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:50:48,289 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 14:54:50,495 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 14:54:53,067 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:08:49,237 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:08:51,848 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:10:29,582 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:10:32,234 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:11:17,816 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:11:20,470 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:17:51,670 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:17:54,314 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:18:54,559 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:18:57,235 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:19:19,918 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:19:22,601 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:20:52,641 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:20:55,354 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:21:44,760 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:21:47,418 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:22:43,912 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:22:46,615 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:23:55,942 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:23:58,603 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:31:30,705 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:31:33,460 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:36:06,965 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:36:07,273 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Column "BRANCHID" not found; SQL statement:
+create table feature(
+id varchar(255) not null,
+path varchar(255) not null,
+name varchar(255) not null,
+description varchar(255) not null,
+backgroundAsJson varchar(255) not null,
+branchId varchar(255) not null,
+language varchar (255) not null,
+keyword varchar(255) not null,
+foreign key (branchId) references branch (branchId),
+constraint pk_feature primary key(id)
+) [42122-193] [ERROR:42122, SQLSTATE:42S22]
+
+2018-07-19 15:36:48,395 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:36:48,737 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Column "FEATUREID" not found; SQL statement:
+create table scenario(
+scenarioId varchar(255) not null,
+description varchar(255) not null,
+scenarioType varchar(255) not null,
+workflowStep varchar(255) not null,
+caseType varchar(255) not null,
+abstractionLevel varchar(255) not null,
+stepsAsJson varchar(255) not null,
+keyword varchar(255) not null,
+name varchar(255) not null,
+featureId varchar(255) not null,
+foreign key (featureId) references feature(featureId),
+constraint pk_scenario primary key (scenarioId)
+) [42122-193] [ERROR:42122, SQLSTATE:42S22]
+
+2018-07-19 15:37:23,159 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:37:25,774 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:38:55,543 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:38:58,196 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:42:26,269 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:42:28,957 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:45:10,845 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:45:13,476 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:46:18,830 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:46:22,020 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:46:34,263 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:46:36,917 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:52:48,061 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:52:50,800 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:53:05,085 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:53:07,716 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:53:34,219 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:53:36,844 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:55:49,452 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:55:52,193 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 15:57:56,932 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 15:57:59,569 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:00:57,768 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:01:00,405 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:01:47,230 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:01:49,909 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:05:18,242 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:05:20,943 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:05:33,792 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:05:36,471 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:10:19,404 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:10:22,084 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:15:22,782 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:15:25,445 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:15:58,283 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:16:01,029 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:16:06,147 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:16:08,824 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:19:11,690 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:19:14,350 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:22:41,139 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:22:43,817 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:22:59,440 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:23:02,094 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:23:18,582 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:23:21,212 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:24:12,014 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:24:14,740 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:36:43,107 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:36:43,412 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE TAG(
+NAME VARCHAR(255) NOT NULL
+CONSTRAINT PK_TAG PRIMARY KEY([*]NAME)
+) "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table tag(
+name varchar(255) not null
+constraint pk_tag primary key(name)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 16:37:06,404 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:37:09,074 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:51:06,816 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:51:07,139 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Column "PROJECTID" not found; SQL statement:
+create table project_hierarchyNode(
+id varchar(255) not null,
+hierarchyId varchar (255) not null,
+constraint pk_project_hierarchyNode primary key (projectId, hierarchyId)
+) [42122-193] [ERROR:42122, SQLSTATE:42S22]
+
+2018-07-19 16:53:09,707 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:53:10,028 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Column "PROJECTID" not found; SQL statement:
+create table project_hierarchyNode(
+id varchar(255) not null,
+hierarchyId varchar (255) not null,
+constraint pk_project_hierarchyNode primary key (projectId, hierarchyId)
+) [42122-193] [ERROR:42122, SQLSTATE:42S22]
+
+2018-07-19 16:53:47,959 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:53:48,291 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Column "BRANCHID" not found; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255) not null,
+
+constraint pk_branch primary key (branchId)
+) [42122-193] [ERROR:42122, SQLSTATE:42S22]
+
+2018-07-19 16:54:42,051 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:54:44,795 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:57:38,100 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 16:57:41,002 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 16:59:58,937 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:00:01,801 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:02:25,438 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:02:28,334 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:03:29,982 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:03:30,320 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255) NOT NULL,
+FOREIGN KEY POJECTID[*] REFERENCES PROJECT(ID),
+CONSTRAINT PK_BRANCH PRIMARY KEY (ID)
+) "; expected "("; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255) not null,
+foreign key pojectId references project(id),
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 17:04:56,033 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:04:56,349 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255) NOT NULL,
+FOREIGN KEY PROJECTID[*] REFERENCES PROJECT(ID),
+CONSTRAINT PK_BRANCH PRIMARY KEY (ID)
+) "; expected "("; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255) not null,
+foreign key projectId references project(id),
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 17:06:58,068 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:06:58,390 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255)  FOREIGN[*] KEY REFERENCES PROJECT(ID) NOT NULL,
+CONSTRAINT PK_BRANCH PRIMARY KEY (ID)
+) "; expected "FOR, UNSIGNED, NOT, NULL, AS, DEFAULT, GENERATED, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255)  foreign key references project(id) not null,
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 17:07:14,974 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:07:15,307 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255)  FOREIGN[*] KEY REFERENCES PROJECT(ID),
+CONSTRAINT PK_BRANCH PRIMARY KEY (ID)
+) "; expected "FOR, UNSIGNED, NOT, NULL, AS, DEFAULT, GENERATED, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255)  foreign key references project(id),
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 17:09:47,919 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:09:50,759 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:10:24,279 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:10:27,073 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:15:39,404 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:15:39,747 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255) NOT NULL,
+CONSTRAINT FK_PROJECT FOREIGN KEY REFERENCES[*] PROJECT(ID)
+CONSTRAINT PK_BRANCH PRIMARY KEY (ID)
+) "; expected "("; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255) not null,
+constraint fk_project foreign key references project(id)
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 17:16:00,830 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:16:01,166 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255) NOT NULL,
+CONSTRAINT FK_PROJECT FOREIGN KEY REFERENCES[*] PROJECT(ID),
+CONSTRAINT PK_BRANCH PRIMARY KEY (ID)
+) "; expected "("; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255) not null,
+constraint fk_project foreign key references project(id),
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 17:17:30,324 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:17:30,644 - [ERROR] - from play.api.db.evolutions.DefaultEvolutionsApi in ScalaTest-run ?.?:? Syntax error in SQL statement "CREATE TABLE BRANCH(
+ID VARCHAR(255) NOT NULL,
+NAME VARCHAR(255) NOT NULL,
+ISSTABLE BOOLEAN NOT NULL,
+PROJECTID VARCHAR(255) NOT NULL,
+CONSTRAINT FK_PROJECT FOREIGN KEY REFERENCES[*] (ID),
+CONSTRAINT PK_BRANCH PRIMARY KEY (ID)
+) "; expected "("; SQL statement:
+create table branch(
+id varchar(255) not null,
+name varchar(255) not null,
+isStable BOOLEAN not null,
+projectId varchar(255) not null,
+constraint fk_project foreign key references (id),
+constraint pk_branch primary key (id)
+) [42001-193] [ERROR:42001, SQLSTATE:42001]
+
+2018-07-19 17:18:07,723 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:18:10,509 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:22:03,185 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:22:06,030 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:24:58,964 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:25:01,816 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:25:48,790 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:25:51,636 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:26:21,110 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:26:23,932 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:26:51,404 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:26:54,268 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:28:14,344 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:28:17,315 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:29:04,408 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:29:07,216 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:30:02,122 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:30:05,054 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:30:42,207 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:30:45,268 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:30:57,300 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:31:00,150 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:31:20,264 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:31:23,175 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:31:32,422 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:31:35,255 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:31:54,065 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:31:56,931 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:41:12,160 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:41:14,896 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:42:52,703 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:42:55,394 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:43:20,531 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:43:23,253 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:46:10,375 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:46:13,072 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:47:28,367 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:47:31,044 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:50:00,450 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:50:03,190 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:51:03,465 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:51:06,199 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:52:02,248 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:52:04,980 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:53:10,167 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:53:12,875 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:57:32,758 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:57:35,468 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:58:51,004 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:58:53,685 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:59:12,591 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:59:15,305 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:59:34,225 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:59:36,955 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-19 17:59:55,464 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 17:59:58,205 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 18:00:18,959 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 18:00:21,701 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 18:05:31,847 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 18:05:34,581 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-19 18:12:37,290 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 18:12:40,006 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-19 18:17:53,179 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-19 18:17:56,040 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:34:41,931 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:34:45,212 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:37:04,542 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:37:07,269 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:37:45,649 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:37:48,358 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:38:22,812 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:38:25,480 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:42:09,159 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:42:11,890 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:43:15,262 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:43:18,162 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:43:18,285 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:43:18,762 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:43:18,950 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:43:19,506 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:43:20,450 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:43:21,063 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:43:21,144 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:43:21,512 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:43:21,675 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:43:21,946 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:43:22,659 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:43:22,922 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:46:54,264 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:46:56,959 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:48:53,308 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:48:56,070 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-20 09:49:59,085 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 09:50:01,825 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:13:04,950 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:13:07,683 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:13:23,563 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:13:26,290 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:13:37,418 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:13:40,180 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:13:53,417 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:13:56,127 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:20:12,426 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:20:15,129 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:26:11,692 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:26:14,492 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:26:44,532 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:26:47,251 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:27:08,915 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:27:11,666 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:32:03,288 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:32:06,035 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:33:52,337 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:33:55,165 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:35:15,852 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:35:18,598 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:45:42,385 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:45:45,148 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:48:06,230 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:48:08,994 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:50:46,507 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:50:49,203 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:51:38,348 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:51:41,084 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:51:55,047 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:51:57,893 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:53:00,929 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:53:03,677 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 10:54:38,969 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 10:54:40,641 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 11:02:39,544 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 11:02:41,225 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:26:09,921 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:26:12,570 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:27:33,998 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:27:36,626 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:28:27,764 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:28:30,393 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:31:22,066 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:31:24,702 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:32:16,773 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:32:19,585 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:33:31,205 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:33:34,013 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:34:22,811 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:34:25,554 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:35:42,664 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:35:45,441 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:37:22,126 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:37:24,936 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:41:14,072 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:41:16,860 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 13:41:26,827 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:41:28,522 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:43:09,083 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:43:10,814 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:43:53,589 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:43:55,277 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:44:39,710 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:44:41,419 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:45:07,027 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:45:08,731 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:45:30,734 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:45:32,455 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:48:01,510 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 13:48:03,203 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:10:35,601 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:10:37,331 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:35:57,712 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:35:59,412 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:38:16,529 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:38:18,195 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:39:28,874 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:39:30,577 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:39:52,108 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:39:53,795 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:46:31,332 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:46:33,016 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:47:20,456 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 14:47:22,153 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 15:48:26,461 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 15:48:29,071 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 15:48:59,788 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 15:49:02,452 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 15:49:52,223 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 15:49:54,891 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 15:51:42,265 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 15:51:44,964 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-20 15:55:14,275 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 15:55:16,908 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-20 15:56:18,011 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 15:56:20,845 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-20 16:00:46,788 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:00:49,525 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-20 16:05:01,597 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:05:04,297 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-20 16:05:36,202 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:05:38,937 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-20 16:06:50,594 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:06:53,296 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 16:18:20,504 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:18:23,212 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-20 16:18:33,699 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:18:36,456 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-20 16:19:51,803 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:19:54,666 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-20 16:20:08,787 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:20:10,494 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:26:18,862 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-20 16:26:20,543 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 09:37:58,538 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 09:38:00,425 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 09:48:07,169 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 09:48:08,886 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:03:14,407 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:03:17,368 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 10:03:33,825 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:03:36,611 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-23 10:03:55,282 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:03:58,067 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-23 10:04:18,353 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:04:20,043 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:10:57,690 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:10:59,346 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:15:23,051 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:15:24,732 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:17:47,136 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:17:49,807 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-23 10:19:02,860 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:19:05,625 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-23 10:20:24,279 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:20:26,901 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 10:21:20,085 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:21:22,765 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-23 10:23:05,209 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:23:06,909 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:33:59,522 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:34:01,217 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:34:29,841 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:34:31,538 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:40:10,408 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:40:12,111 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:42:52,313 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 10:42:54,030 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:17:59,033 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:18:01,814 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-23 11:18:31,681 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:18:34,391 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-23 11:23:12,393 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:23:15,086 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-23 11:30:36,347 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:30:39,049 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-23 11:31:02,232 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:31:05,036 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-23 11:33:50,286 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:33:53,010 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-23 11:34:15,800 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:34:18,607 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-23 11:49:42,659 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:49:45,584 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-23 11:58:40,379 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 11:58:42,071 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 12:05:16,938 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 12:05:18,606 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:35:11,007 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:35:13,874 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-23 13:42:10,995 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:42:13,908 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 13:42:19,008 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:42:20,700 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:44:04,211 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:44:05,920 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:44:43,712 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:44:45,406 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:47:03,952 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:47:05,639 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:50:13,562 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:50:15,261 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:52:47,984 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:52:49,683 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:53:43,182 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:53:44,837 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:56:38,571 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:56:40,301 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:57:29,013 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 13:57:30,731 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:06:36,959 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:06:38,640 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:08:36,535 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:08:38,236 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:09:05,819 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:09:07,503 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:10:16,794 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:10:18,485 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:10:35,904 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:10:37,598 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:11:00,086 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:11:01,790 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:37:59,935 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 14:38:01,626 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:50,422 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:53,136 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:53,139 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:53,276 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:54,158 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:54,160 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:54,273 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:54,780 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:54,781 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:54,864 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:55,274 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:55,275 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:56,067 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:56,558 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:56,559 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:56,644 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:56,979 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:56,980 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:57,748 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:57,974 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:57,975 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:58,031 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:58,291 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:58,292 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:58,350 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:58,568 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Start synchronizing projects
+
+2018-07-23 16:56:58,569 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 16:56:59,330 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 16:56:59,672 - [INFO] - from application in default-akka.actor.default-dispatcher-7 ?.?:? Start synchronizing projects
+
+2018-07-23 16:59:05,652 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:00:20,548 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:00:56,281 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:02:34,911 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:03:40,981 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:08:23,457 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:15:23,845 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:32,396 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:35,286 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:35,291 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:35,494 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:36,295 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:36,296 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:36,370 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:36,718 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:36,720 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:36,821 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:37,255 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:37,257 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:38,083 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:38,594 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:38,595 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:38,672 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:38,954 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:38,955 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:39,679 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:39,886 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:39,887 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:39,960 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:40,265 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:40,266 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:40,336 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:40,582 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:40,583 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:16:41,400 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:16:41,680 - [INFO] - from application in default-akka.actor.default-dispatcher-5 ?.?:? Start synchronizing projects
+
+2018-07-23 17:16:41,682 - [INFO] - from application in scala-execution-context-global-199 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(add-suggestions), branches to delete: Set()
+
+2018-07-23 17:25:35,540 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:12,355 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:15,037 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:15,040 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:15,220 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:16,060 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:16,061 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:16,163 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:16,603 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:16,604 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:16,701 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:17,060 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:17,061 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:17,932 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:18,411 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:18,412 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:18,491 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:18,801 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:18,802 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:19,511 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:19,828 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:19,829 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:19,907 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:20,158 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:20,159 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:20,211 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:20,429 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:20,430 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:27:21,263 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:27:21,529 - [INFO] - from application in default-akka.actor.default-dispatcher-6 ?.?:? Start synchronizing projects
+
+2018-07-23 17:27:21,532 - [INFO] - from application in scala-execution-context-global-133 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(add-suggestions), branches to delete: Set()
+
+2018-07-23 17:28:33,474 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:30:41,922 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:33:20,106 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:33:48,008 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:33:50,721 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 17:33:50,726 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:43:39,555 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:43:42,304 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Start synchronizing projects
+
+2018-07-23 17:43:42,307 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Shutting down connection pool.
+
+2018-07-23 17:43:56,225 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:43:58,359 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:43:58,947 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 17:57:23,913 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:57:26,013 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 17:57:26,615 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:04:01,872 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:04:03,984 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:04:04,547 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:08:27,756 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:08:29,859 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:08:30,475 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:11:20,431 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:11:22,533 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:11:23,135 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:11:26,337 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 18:11:27,117 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 18:11:27,598 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Start synchronizing projects
+
+2018-07-23 18:13:52,628 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:13:54,684 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:13:55,296 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:13:58,519 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 18:13:59,299 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 18:13:59,738 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Start synchronizing projects
+
+2018-07-23 18:14:48,144 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:14:50,255 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:14:50,845 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:18:13,383 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:18:15,482 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:18:16,089 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:20:05,431 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:20:07,548 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:20:08,101 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:20:11,385 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 18:20:12,164 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 18:20:12,613 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:45,537 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:48,191 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:48,194 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:48,347 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:49,248 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:49,249 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:49,331 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:49,741 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:49,742 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:49,836 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:50,327 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:50,329 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:51,109 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:51,630 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:51,632 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:51,708 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:52,024 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:52,025 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:52,744 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:52,987 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:52,988 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:53,052 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:53,339 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:53,340 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:53,401 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:53,623 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:53,625 - [INFO] - from application in application-akka.actor.default-dispatcher-10 ?.?:? Shutting down connection pool.
+
+2018-07-23 18:23:54,391 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:54,861 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:54,940 - [INFO] - from application in pool-1-thread-1 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:54,944 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(), branches to checkout: Set(master), branches to delete: Set()
+
+2018-07-23 18:23:54,976 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 18:23:54,981 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 18:23:55,033 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Project suggestionsWS, branches to update: Set(), branches to checkout: Set(master), branches to delete: Set()
+
+2018-07-23 18:23:55,062 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 18:23:55,067 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 18:23:55,127 - [INFO] - from application in pool-1-thread-1 ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:23:56,164 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:56,170 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(), branches to checkout: Set(master), branches to delete: Set()
+
+2018-07-23 18:23:56,201 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 18:23:56,206 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 18:23:58,772 - [INFO] - from application in scala-execution-context-global-199 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:58,773 - [INFO] - from application in scala-execution-context-global-132 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(add-suggestions), branches to delete: Set()
+
+2018-07-23 18:23:59,156 - [INFO] - from application in pool-1-thread-1 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:59,431 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:59,543 - [INFO] - from application in default-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 18:23:59,544 - [INFO] - from application in scala-execution-context-global-132 ?.?:? Project suggestionsWS, branches to update: Set(), branches to checkout: Set(master, add-suggestions), branches to delete: Set()
+
+2018-07-23 18:23:59,552 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 18:24:56,450 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:24:59,304 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:25:00,199 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:29:40,665 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:29:42,724 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:29:43,267 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:31:35,290 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:31:56,229 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:31:58,293 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:31:59,010 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:35:00,646 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:35:02,731 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:35:03,331 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:37:31,680 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:37:33,784 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:37:34,378 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:37:37,604 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-23 18:37:38,393 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-23 18:37:38,860 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Start synchronizing projects
+
+2018-07-23 18:39:45,281 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:39:47,359 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:39:47,933 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:40:52,086 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:40:54,177 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:40:54,744 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:40:54,808 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(), branches to checkout: Set(master), branches to delete: Set()
+
+2018-07-23 18:40:54,942 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 18:40:54,956 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 18:41:40,368 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:41:42,486 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:41:43,072 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:48:14,480 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:48:16,562 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:48:17,305 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 18:48:17,326 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 18:48:17,341 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:48:17,353 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 18:48:17,409 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 18:49:13,618 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:49:15,676 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:49:16,476 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 18:49:16,491 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 18:49:16,506 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:49:16,514 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 18:49:16,574 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 18:55:19,673 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:55:21,750 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 18:55:22,600 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 18:55:22,619 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 18:55:22,634 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 18:55:22,643 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 18:55:22,699 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:01:26,359 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:01:30,344 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:01:31,396 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:01:31,419 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:01:31,436 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:01:31,446 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:01:31,530 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:01:42,959 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:01:45,683 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:01:46,619 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:01:46,637 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:01:46,658 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:01:46,676 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:01:46,737 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:03:45,918 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Start synchronizing projects
+
+2018-07-23 19:03:45,919 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-23 19:03:45,918 - [WARN] - from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper ?.?:? HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s608ms756µs424ns).
+
+2018-07-23 19:03:45,918 - [WARN] - from com.zaxxer.hikari.pool.HikariPool in HikariPool-2 housekeeper ?.?:? HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m133ms146µs979ns).
+
+2018-07-23 19:03:45,933 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-23 19:03:45,935 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-23 19:03:45,938 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Start synchronizing projects
+
+2018-07-23 19:03:45,945 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:03:45,950 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:03:45,954 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:03:45,957 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Start synchronizing projects
+
+2018-07-23 19:03:45,957 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:03:45,968 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:03:45,971 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:03:45,973 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:03:45,981 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:03:45,990 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:03:45,991 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:03:45,992 - [INFO] - from application in application-akka.actor.default-dispatcher-5 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:03:46,003 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:03:53,615 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:03:55,719 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:03:56,617 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:03:56,633 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:03:56,650 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:03:56,659 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:03:56,715 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:08:24,695 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:08:26,806 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:08:27,548 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:08:27,569 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:08:27,584 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:08:27,597 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:08:27,648 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:09:57,975 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:10:00,099 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:10:00,867 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:10:00,885 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:10:00,909 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:10:00,918 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:10:00,971 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:12:09,860 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:12:11,946 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:12:12,525 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:12:12,586 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(), branches to checkout: Set(master), branches to delete: Set()
+
+2018-07-23 19:12:12,723 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:12:12,736 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:13:39,208 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:13:41,336 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:13:41,912 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:13:41,981 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(), branches to checkout: Set(master), branches to delete: Set()
+
+2018-07-23 19:13:42,117 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:13:42,131 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:15:39,205 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:15:41,277 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:15:41,812 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:17:08,567 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:17:10,659 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:17:11,264 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:19:13,592 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:19:15,684 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:19:16,489 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:19:16,506 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:19:16,522 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:19:16,531 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:19:16,589 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:23:43,063 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:23:45,151 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:23:45,920 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:23:45,937 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:23:45,953 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:23:45,962 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:23:46,015 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:26:33,036 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:26:35,132 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:26:35,898 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:26:35,914 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:26:35,937 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:26:35,946 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:26:35,999 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:28:23,461 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:28:25,527 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:28:26,327 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:28:26,342 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:28:26,361 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:28:26,370 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:28:26,427 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:29:12,820 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:29:14,883 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:29:15,683 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:29:15,709 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:29:15,724 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:29:15,737 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:29:15,789 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:29:35,379 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:29:37,546 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:29:38,374 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:29:38,390 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:29:38,405 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:29:38,414 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:29:38,495 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:30:55,619 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:30:57,705 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:30:58,449 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:30:58,464 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:30:58,480 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:30:58,489 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:30:58,548 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:35:23,346 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:35:25,445 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:35:26,285 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:35:26,302 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:35:26,319 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:35:26,331 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:35:26,385 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:37:01,707 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:37:03,943 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:37:04,896 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:37:04,912 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:37:04,927 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:37:04,936 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:37:04,993 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:38:57,400 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:38:59,503 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:39:00,272 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:39:00,287 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:39:00,302 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:39:00,312 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:39:00,369 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:39:47,424 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:39:49,505 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:39:50,287 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:39:50,302 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:39:50,319 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:39:50,327 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:39:50,384 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-23 19:41:19,732 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:41:21,866 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-23 19:41:22,612 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-23 19:41:22,628 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-23 19:41:22,643 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-23 19:41:22,650 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-23 19:41:22,703 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 09:16:27,158 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 09:16:29,622 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 09:16:30,536 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 09:16:30,577 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 09:16:30,594 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 09:16:30,613 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 09:16:30,675 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 10:29:39,248 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 10:29:41,503 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 10:29:42,314 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 10:29:42,331 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 10:29:42,347 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 10:29:42,365 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 10:29:42,427 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 10:51:08,751 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 10:51:11,061 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 10:51:11,915 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 10:51:11,933 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 10:51:11,947 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 10:51:11,967 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 10:51:12,034 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 11:09:34,091 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 11:09:36,358 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 11:09:37,216 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 11:09:37,235 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 11:09:37,250 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 11:09:37,260 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 11:09:37,318 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 11:11:11,168 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 11:11:13,418 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 11:11:14,244 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 11:11:14,262 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 11:11:14,278 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 11:11:14,287 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 11:11:14,344 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 11:12:14,174 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 11:12:16,856 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 11:12:17,915 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 11:12:17,942 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 11:12:17,958 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 11:12:17,976 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 11:12:18,031 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 13:37:46,243 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:37:49,245 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Start synchronizing projects
+
+2018-07-24 13:37:49,248 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-24 13:38:26,010 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:38:28,907 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-24 13:38:28,911 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-24 13:41:57,855 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:42:00,680 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-24 13:42:00,683 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Shutting down connection pool.
+
+2018-07-24 13:42:17,212 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:42:20,112 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-24 13:42:20,115 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-24 13:42:33,610 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:42:35,839 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:42:36,683 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 13:42:36,701 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 13:42:36,718 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 13:42:36,728 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 13:42:36,788 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 13:43:33,892 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:43:36,213 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:43:37,030 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 13:43:37,054 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 13:43:37,069 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 13:43:37,079 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 13:43:37,140 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 13:44:52,771 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:44:55,126 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:44:55,985 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 13:44:56,005 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 13:44:56,020 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 13:44:56,029 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 13:44:56,088 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 13:51:12,340 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:51:14,707 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:51:15,506 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 13:51:15,525 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 13:51:15,542 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 13:51:15,552 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 13:51:15,612 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 13:54:09,397 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:54:11,687 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:54:12,488 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 13:54:12,516 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 13:54:12,532 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 13:54:12,541 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 13:54:12,602 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 13:57:07,644 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:57:10,093 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 13:57:10,975 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 13:57:10,996 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 13:57:11,010 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 13:57:11,020 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 13:57:11,081 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:00:23,300 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:00:25,663 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:00:26,489 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:00:26,509 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:00:26,524 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:00:26,533 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:00:26,592 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:01:38,733 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:01:41,167 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:01:41,999 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:01:42,020 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:01:42,035 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:01:42,045 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:01:42,107 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:04:12,844 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:04:15,086 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:04:15,877 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:04:15,895 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:04:15,910 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:04:15,921 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:04:15,993 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:08:53,116 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:08:55,377 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:08:56,175 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:08:56,203 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:08:56,218 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:08:56,228 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:08:56,287 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:10:16,709 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:10:18,974 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:10:19,810 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:10:19,827 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:10:19,844 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:10:19,854 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:10:19,912 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:13:59,264 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:14:01,538 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:14:02,363 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:14:02,380 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:14:02,397 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:14:02,405 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:14:02,470 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:17:57,987 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:18:00,249 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:18:01,074 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:18:01,094 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:18:01,109 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:18:01,118 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:18:01,180 - [INFO] - from application in application-akka.actor.default-dispatcher-6 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:21:13,773 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:21:16,033 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:21:16,812 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:21:16,834 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:21:16,848 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:21:16,858 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:21:16,917 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:22:45,542 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:22:47,840 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:22:48,674 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:22:48,692 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:22:48,707 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:22:48,716 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:22:48,780 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:23:35,564 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:23:37,826 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:23:38,619 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:23:38,641 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:23:38,655 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:23:38,664 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:23:38,724 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:25:09,840 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:25:12,115 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:25:12,936 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:25:12,953 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:25:12,970 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:25:12,979 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:25:13,044 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:28:23,587 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:28:26,026 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:28:26,846 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:28:26,865 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:28:26,880 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:28:26,889 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:28:26,951 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:38:18,475 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:38:20,715 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:38:21,523 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:38:21,540 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:38:21,556 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:38:21,565 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:38:21,622 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:39:07,844 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:39:10,116 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:39:10,943 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:39:10,960 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:39:10,976 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:39:10,985 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:39:11,045 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:41:43,887 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:41:46,159 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:41:46,982 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:41:47,010 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:41:47,025 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:41:47,033 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:41:47,098 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:46:35,583 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:46:37,849 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:46:38,420 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:46:38,520 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(), branches to checkout: Set(master), branches to delete: Set()
+
+2018-07-24 14:46:38,665 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:46:38,681 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:47:28,269 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:47:30,502 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:47:31,334 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:47:31,357 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:47:31,372 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:47:31,381 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:47:31,445 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:49:27,887 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:49:30,139 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:49:30,932 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:49:30,949 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:49:30,964 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:49:30,974 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:49:31,032 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:50:06,223 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:50:08,462 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:50:09,273 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:50:09,291 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:50:09,310 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:50:09,319 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:50:09,380 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:50:43,534 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:50:46,024 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:50:46,821 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:50:46,852 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:50:46,869 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:50:46,878 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:50:46,939 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:51:05,158 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:51:07,605 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:51:08,455 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:51:08,474 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:51:08,489 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:51:08,507 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:51:08,567 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:51:43,475 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:51:45,775 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:51:46,715 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:51:46,732 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:51:46,747 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:51:46,756 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:51:46,817 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:54:13,921 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:54:16,179 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:54:16,974 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:54:16,992 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:54:17,006 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:54:17,014 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:54:17,072 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:54:36,014 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:54:38,256 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:54:39,039 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:54:39,060 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:54:39,074 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:54:39,083 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:54:39,142 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:54:59,743 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:55:01,986 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:55:02,802 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:55:02,825 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:55:02,840 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:55:02,851 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:55:02,913 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-24 14:55:16,573 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:55:18,818 - [INFO] - from application in main ?.?:? Creating Pool for datasource 'default'
+
+2018-07-24 14:55:19,624 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Cloning file:/home/bodianga/IdeaProjects/git/theGardener/target/data/GetFeatures/library/suggestionsWS to target/data/git/suggestionsWS/master
+
+2018-07-24 14:55:19,651 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? checkout target/data/git/suggestionsWS/master to branch master
+
+2018-07-24 14:55:19,675 - [INFO] - from application in main ?.?:? Start synchronizing projects
+
+2018-07-24 14:55:19,685 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Project suggestionsWS, branches to update: Set(master), branches to checkout: Set(), branches to delete: Set()
+
+2018-07-24 14:55:19,751 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? pull in target/data/git/suggestionsWS/master
+
+2018-07-25 13:49:21,599 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 13:49:24,841 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Start synchronizing projects
+
+2018-07-25 13:49:24,847 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-25 13:55:47,240 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 13:55:49,971 - [INFO] - from application in application-akka.actor.default-dispatcher-9 ?.?:? Start synchronizing projects
+
+2018-07-25 13:55:49,975 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Shutting down connection pool.
+
+2018-07-25 13:57:58,133 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 13:58:00,923 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-25 13:58:00,927 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-25 14:20:13,628 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 14:20:16,372 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-25 14:20:16,376 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-25 14:29:13,390 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 14:29:15,981 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-25 14:29:15,987 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-25 14:30:32,356 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 14:30:34,912 - [INFO] - from application in application-akka.actor.default-dispatcher-8 ?.?:? Start synchronizing projects
+
+2018-07-25 14:30:34,918 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-25 14:32:42,217 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 14:32:44,955 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-25 14:32:44,958 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
+2018-07-25 14:35:49,944 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 14:35:52,733 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Start synchronizing projects
+
+2018-07-25 14:35:52,735 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-25 14:44:20,864 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 14:44:23,627 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-25 14:44:23,631 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-25 14:59:34,101 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 14:59:36,834 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-25 14:59:36,838 - [INFO] - from application in application-akka.actor.default-dispatcher-7 ?.?:? Shutting down connection pool.
+
+2018-07-25 15:08:44,129 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 15:08:46,875 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-25 15:08:46,878 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-25 15:14:54,653 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 15:14:57,382 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Start synchronizing projects
+
+2018-07-25 15:14:57,384 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Shutting down connection pool.
+
+2018-07-25 15:17:45,006 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 15:17:47,739 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Start synchronizing projects
+
+2018-07-25 15:17:47,743 - [INFO] - from application in application-akka.actor.default-dispatcher-3 ?.?:? Shutting down connection pool.
+
+2018-07-25 15:18:53,080 - [INFO] - from application in ScalaTest-run ?.?:? Creating Pool for datasource 'default'
+
+2018-07-25 15:18:55,882 - [INFO] - from application in application-akka.actor.default-dispatcher-2 ?.?:? Start synchronizing projects
+
+2018-07-25 15:18:55,885 - [INFO] - from application in application-akka.actor.default-dispatcher-4 ?.?:? Shutting down connection pool.
+
